@@ -1,1 +1,1 @@
-path name of my current working directory
+a script about the path name of the current working directory
