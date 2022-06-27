@@ -1,1 +1,1 @@
-shell redirections for this project
+This is a new readme
