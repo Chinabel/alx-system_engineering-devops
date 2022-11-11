@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bash script that displays the PID, along with the process name
-# of processes whose name contain the word bash.
-command=$(pgrep -l bash)
-echo "$command"
+# Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
+# shellcheck disable=SC2009
+list=$(ps -afux | grep bash)
+echo "$list"
