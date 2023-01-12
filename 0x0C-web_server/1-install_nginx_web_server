@@ -1,18 +1,7 @@
 #!/usr/bin/env bash
-# Bash script that configures a nginx web server.
+# Install nginx and print out the string "Hello World!"
 
-# Installing nginx
 sudo apt-get -y update
 sudo apt-get -y install nginx
-
-# Adjusting the Firewall
-sudo ufw allow 'Nginx HTTP'
-
-# Changing permissions to create a new html file
-sudo chown -R $USER:$USER /var/www/html
-
-# Creating a new html file
-echo "Hello World!" > /var/www/html/index.html
-
-# Starting the server
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
 sudo service nginx start
