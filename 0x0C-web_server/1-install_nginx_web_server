@@ -1,18 +1,7 @@
 #!/usr/bin/env bash
-# Bash script that configures a nginx web server.
-
-# Installing nginx
-sudo apt-get -y update
-sudo apt-get -y install nginx
-
-# Adjusting the Firewall
-sudo ufw allow 'Nginx HTTP'
-
-# Changing permissions to create a new html file
-sudo chown -R $USER:$USER /var/www/html
-
-# Creating a new html file
-echo "Holberton School for the win!" > /var/www/html/index.html
-
-# Starting the server
-sudo service nginx start
+# Installs nginx server
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Hello World" > /var/www/html/index.html
+service nginx start
