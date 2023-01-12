@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Background Context
 The Webstack debugging series will train you in the art of debugging. Computers and software rarely work the way we want (that’s the “fun” part of the job!).
 
@@ -69,3 +70,6 @@ For this project you will be given a container which you can use to solve the ta
 - Your Bash scripts must run without error
 - The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 -  The second line of all your Bash scripts should be a comment explaining what is the script doing
+=======
+0x0D-web_stack_debugging_0 project
+>>>>>>> bde27ddaf1670a847d54120f0a1d0dbef46c0ed1

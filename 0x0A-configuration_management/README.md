@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+0x0A. Configuration management project
+=======
 # Requirements
 ## General
 - All your files will be interpreted on Ubuntu 20.04 LTS
@@ -24,3 +27,4 @@ You do not need to attempt to upgrade versions. This project is simply a set of 
 ```
 $ gem install puppet-lint
 ```
+>>>>>>> ba77720530a9b51c0950f3ee95931dbb80e36ee7

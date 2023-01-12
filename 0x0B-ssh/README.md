@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+0x0B. SSH project
+=======
 # Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -24,3 +27,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your Bash script files must be executable
 - The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 - The second line of all your Bash scripts should be a comment explaining what is the script doing
+>>>>>>> ba77720530a9b51c0950f3ee95931dbb80e36ee7
