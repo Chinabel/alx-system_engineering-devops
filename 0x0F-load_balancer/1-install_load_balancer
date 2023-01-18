@@ -15,6 +15,7 @@ backend $DOMAIN_NAME-backend
 	balance roundrobin
 	server web1 100.25.223.168:80 check
 	server web2 100.25.148.26:80 check
+
 frontend $DOMAIN_NAME-frontend
 	bind *:80
 	mode http
