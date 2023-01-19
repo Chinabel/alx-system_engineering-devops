@@ -1,6 +1,24 @@
 #!/usr/bin/env bash
-# Fixing Nginx server
+#Configuring a brand new Ubuntu machine
 
-rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+apt-get update
+apt-get install -y nginx
+
+printf %s "server {
+  listen      80 default_server;
+  add_header  X-Served-By $HOSTNAME;
+  root        /var/www/html;
+  index       index.html index.htm;
+  location /redirect_me {
+    return 301 http://github.com/prohence;
+  }
+  error_page 404 /404.html;
+  location = /404.html {
+    root /var/www/html/;
+    internal;
+  }
+}
+" >/etc/nginx/sites-available/default
+echo "Hello school!" >/var/www/html/index.html
+printf "%s\n" "Ceci n'est pas une page" >/var/www/html/404.html
 service nginx restart
